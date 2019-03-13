@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98e6ad37-42d5-4261-8cff-1a921036757f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/BackEnd/HTMLParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSC-365-WebParser/BackEnd/HTMLParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/BackEnd/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSC-365-WebParser/BackEnd/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/TerminalUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/TerminalUI$Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/TerminalUI$StreamCapturer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/TerminalUI$TerminalOutputPane$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/TerminalUI$TerminalOutputPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/TerminalUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/UI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BackEnd/HTMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/HTMLParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BackEnd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/TerminalUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/TerminalUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/TerminalUI.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/UI.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,37 +25,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CSC_365_WebParser$Main.ic" NAME="Main Coverage Results" MODIFIED="1552459570597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>BackEnd.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BackEnd/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/UI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/TerminalUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            <state relative-caret-position="23">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BackEnd/HTMLParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="2144">
+              <caret line="158" selection-start-line="158" selection-end-line="158" />
               <folding>
                 <element signature="method#clearFiles#0;class#HTMLParser#0" />
               </folding>
@@ -79,6 +83,10 @@
       <find>enab</find>
       <find>System.out</find>
       <find>txt fi</find>
+      <find>emptylab</find>
+      <find>terminalpanel</find>
+      <find>System.out.printlnA</find>
+      <find>System.out.println</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,16 +98,16 @@
         <option value="$PROJECT_DIR$/src/GUI/IU2.form" />
         <option value="$PROJECT_DIR$/src/GUI/UI2.java" />
         <option value="$PROJECT_DIR$/src/BackEnd/HTMLParser.java" />
-        <option value="$PROJECT_DIR$/src/GUI/UI.java" />
         <option value="$PROJECT_DIR$/src/GUI/TerminalUI.java" />
         <option value="$PROJECT_DIR$/src/BackEnd/Main.java" />
+        <option value="$PROJECT_DIR$/src/GUI/UI.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-9" />
+    <option name="width" value="975" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator currentView="PackagesPane" proportions="" version="1">
@@ -132,7 +140,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552452693069" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552471714273" />
     <property name="last.edited.regexp" value="Sample Text" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../wikiParser" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -197,35 +205,36 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.08704293" />
-      <window_info id="Structure" order="1" sideWeight="0.5034965" side_tool="true" weight="0.08704293" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48868778" visible="true" weight="0.14228188" />
+      <window_info id="Structure" order="1" sideWeight="0.51131225" side_tool="true" weight="0.14228188" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960256" visible="true" weight="0.31980908" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.35" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.42720765" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.50039744" side_tool="true" visible="true" weight="0.31980908" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.23382352" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32856005" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32794118" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3295302" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -233,7 +242,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BackEnd/Main.java</url>
-          <line>24</line>
+          <line>22</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -246,13 +255,7 @@
     <entry file="file://$PROJECT_DIR$/src/GUI/Consumer.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI/TerminalOutputPane.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI/StreamCapturer.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/GridBagLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="493" column="11" selection-start-line="493" selection-start-column="11" selection-end-line="493" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/GridBagLayout.java" />
     <entry file="file://$PROJECT_DIR$/src/BackEnd/DescendingSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -260,13 +263,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/List.java" />
     <entry file="jar://$PROJECT_DIR$/lib/jsoup-1.9.2.jar!/org/jsoup/helper/Validate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -288,41 +285,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/javax/swing/JTextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="196" column="11" selection-start-line="196" selection-start-column="11" selection-end-line="196" selection-end-column="11" />
-          <folding>
-            <element signature="e#6952#6953#0" expanded="true" />
-            <element signature="e#6993#6994#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackEnd/HTMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
-          <folding>
-            <element signature="method#clearFiles#0;class#HTMLParser#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/UI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/javax/swing/JTextField.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI/TerminalUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        <state relative-caret-position="152">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -331,8 +298,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BackEnd/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackEnd/HTMLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2144">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+          <folding>
+            <element signature="method#clearFiles#0;class#HTMLParser#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/UI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
