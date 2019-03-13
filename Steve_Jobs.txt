@@ -2719,3 +2719,6 @@ challenge = 1
 Welcome = 1
 derail = 1
 arguments = 1
+7
+https://en.wikipedia.org/wiki/Steve_Jobs
+Yoshi

@@ -23,22 +23,15 @@ public class TerminalUI {
                 }
 
                 JFrame frame = new JFrame();
-                JPanel panel = new JPanel();
-
-                JTextField urlField;
-                JLabel urlLabel;
-                JLabel emptyLabel;
-
-                JButton goButton;
-                JButton fileButton;
+                JPanel terminalPanel = new JPanel();
 
                 //Frame Stuff
-                frame.setSize(800,800);
+                frame.setSize(400,400);
                 frame.setLocationRelativeTo(null);
 
                 frame.setVisible(true);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.add(panel);
+                frame.add(terminalPanel);
 
                 //terminal stuff
                 TerminalOutputPane terminalOutputPanel = new TerminalOutputPane();
@@ -48,12 +41,8 @@ public class TerminalUI {
                 PrintStream ps = System.out;
                 System.setOut(new PrintStream(new StreamCapturer("STDOUT", terminalOutputPanel, ps)));
 
-                HTMLParser runHTMLParse = null;
-                try {
-                    runHTMLParse = new HTMLParser();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+               UI runHTMLParse = new UI();
+
 
 
             }
