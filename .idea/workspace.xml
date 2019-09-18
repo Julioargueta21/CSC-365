@@ -1,45 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98e6ad37-42d5-4261-8cff-1a921036757f" name="Default Changelist" comment="">
+    <list default="true" id="c16f0771-56ab-4194-a2b6-65a0c4eef932" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_9_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control.txt" beforeDir="false" afterPath="$PROJECT_DIR$/control.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/BackEnd/HTMLParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSC-365-WebParser/BackEnd/HTMLParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BackEnd/HTMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackEnd/HTMLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoCommit.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSC-365-WebParser.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/control.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jsoup-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/BackEnd/DescendingSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/BackEnd/HTMLParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/BackEnd/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/GUI/UI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/META-INF/CSC-365-WebParser.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSC-365-WebParser/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackEnd/DescendingSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackEnd/HTMLParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackEnd/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/UI.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CSC_365_WebParser$Main.ic" NAME="Main Coverage Results" MODIFIED="1552459570597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>BackEnd.*</FILTER>
-    </SUITE>
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="209" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BackEnd/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/TFIDF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/UI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+            <state relative-caret-position="400">
+              <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,10 +59,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BackEnd/HTMLParser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+            <state relative-caret-position="527">
+              <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,15 +81,19 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>,</find>
-      <find>enab</find>
+      <find>userag</find>
+      <find>userage</find>
+      <find>steve</find>
+      <find>jobs</find>
+      <find>luigi</find>
+      <find>Person</find>
+      <find>apple</find>
+      <find>Jobs</find>
+      <find>GAY</find>
+      <find>47</find>
+      <find>is</find>
+      <find>tfidf</find>
       <find>System.out</find>
-      <find>txt fi</find>
-      <find>emptylab</find>
-      <find>terminalpanel</find>
-      <find>System.out.printlnA</find>
-      <find>System.out.println</find>
-      <find>clearfiles()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -84,43 +102,70 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/GUI/IU2.form" />
-        <option value="$PROJECT_DIR$/src/GUI/UI2.java" />
-        <option value="$PROJECT_DIR$/src/GUI/TerminalUI.java" />
-        <option value="$PROJECT_DIR$/src/BackEnd/Main.java" />
-        <option value="$PROJECT_DIR$/src/GUI/UI.java" />
-        <option value="$PROJECT_DIR$/src/BackEnd/HTMLParser.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/WikiParser.java" />
+        <option value="$PROJECT_DIR$/src/main/gay.java" />
+        <option value="$PROJECT_DIR$/src/main/Documents.java" />
+        <option value="$PROJECT_DIR$/src/main/Document.java" />
+        <option value="$PROJECT_DIR$/src/main/Dlist.java" />
+        <option value="$PROJECT_DIR$/src/main/DList.java" />
+        <option value="$PROJECT_DIR$/src/main/TFIDF.java" />
+        <option value="$PROJECT_DIR$/src/main/Parser.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="525" />
-    <option name="y" value="1034" />
-    <option name="width" value="975" />
-    <option name="height" value="1020" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="44" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1403" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="PackagesPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CSC365P1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC365P1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC365P1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC365P1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
-              <item name="CSC-365-WebParser" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CSC-365-WebParser" type="616d4139:PackageViewModuleNode" />
+              <item name="CSC365P1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CSC365P1" type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
-              <item name="CSC-365-WebParser" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CSC-365-WebParser" type="616d4139:PackageViewModuleNode" />
-              <item name="BackEnd" type="1f31426a:PackageElementNode" />
+              <item name="CSC365P1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CSC365P1" type="616d4139:PackageViewModuleNode" />
+              <item name="src" type="1f31426a:PackageElementNode" />
             </path>
             <path>
-              <item name="CSC-365-WebParser" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CSC-365-WebParser" type="616d4139:PackageViewModuleNode" />
-              <item name="GUI" type="1f31426a:PackageElementNode" />
+              <item name="CSC365P1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CSC365P1" type="616d4139:PackageViewModuleNode" />
+              <item name="src" type="1f31426a:PackageElementNode" />
+              <item name="main" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -130,13 +175,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552494306178" />
-    <property name="last.edited.regexp" value="Sample Text" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568787670180" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../wikiParser" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="restartRequiresConfirmation" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="src.main" />
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -150,13 +200,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BackEnd.Main" />
-      <module name="CSC-365-WebParser" />
+  <component name="RunManager">
+    <configuration name="Parser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.Parser" />
+      <module name="CSC365P1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BackEnd.*" />
+          <option name="PATTERN" value="src.main.Llist" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,23 +214,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TerminalUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GUI.TerminalUI" />
-      <module name="CSC-365-WebParser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="WikiParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.WikiParser" />
+      <module name="CSC365P1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TerminalUI" />
+        <item itemvalue="Application.Parser" />
+        <item itemvalue="Application.WikiParser" />
       </list>
     </recent_temporary>
   </component>
@@ -189,118 +233,188 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="98e6ad37-42d5-4261-8cff-1a921036757f" name="Default Changelist" comment="" />
-      <created>1552263122354</created>
+      <changelist id="c16f0771-56ab-4194-a2b6-65a0c4eef932" name="Default Changelist" comment="" />
+      <created>1568693614213</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1552263122354</updated>
+      <updated>1568693614213</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="858" y="25" width="975" height="1020" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48868778" visible="true" weight="0.2831001" />
-      <window_info id="Structure" order="1" sideWeight="0.51131225" side_tool="true" weight="0.14228188" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49907234" visible="true" weight="0.2531949" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.3493841" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286052" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31993696" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995272" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.42720765" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.23382352" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32794118" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3295302" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Maven" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286052" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Maven" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Structure" order="8" sideWeight="0.5009276" side_tool="true" weight="0.11581469" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BackEnd/Main.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49907234" weight="0.2531949" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286052" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31993696" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995272" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286052" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Maven" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Structure" order="8" sideWeight="0.5009276" side_tool="true" weight="0.11581469" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GUI/IU2.form" />
-    <entry file="file://$PROJECT_DIR$/src/GUI/IU2.java" />
-    <entry file="file://$PROJECT_DIR$/src/GUI/Consumer.java" />
-    <entry file="file://$PROJECT_DIR$/src/GUI/TerminalOutputPane.java" />
-    <entry file="file://$PROJECT_DIR$/src/GUI/StreamCapturer.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/GridBagLayout.java" />
-    <entry file="file://$PROJECT_DIR$/src/BackEnd/DescendingSort.java">
+    <entry file="jrt://C:/Program Files/Java/jdk-11.0.2!/java.base/java/lang/Cloneable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
+        <state relative-caret-position="56">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar!/org/jsoup/nodes/Node.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/List.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/jsoup-1.9.2.jar!/org/jsoup/helper/Validate.class">
+    <entry file="file://$PROJECT_DIR$/src/main/WikiParser.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar!/org/jsoup/select/Elements.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="186">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="e#6072#6073#0" expanded="true" />
+            <element signature="e#6111#6112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jsoup-1.9.2.jar!/org/jsoup/helper/HttpConnection.class">
+    <entry file="file://$PROJECT_DIR$/src/main/DList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="155">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-365-WebParser.iml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar!/org/jsoup/nodes/Attributes.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="1055">
+          <caret line="264" column="23" selection-start-line="264" selection-start-column="23" selection-end-line="264" selection-end-column="23" />
+          <folding>
+            <element signature="e#7103#7104#0" expanded="true" />
+            <element signature="e#7137#7138#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/javax/swing/JTextField.java" />
-    <entry file="file://$PROJECT_DIR$/src/GUI/TerminalUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/BackEnd/HTMLParser.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar!/org/jsoup/Connection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        <state relative-caret-position="1891">
+          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/UI.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar!/org/jsoup/nodes/Document.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        <state relative-caret-position="-465">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar!/org/jsoup/nodes/Element.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14928">
+          <caret line="594" column="26" selection-start-line="594" selection-start-column="26" selection-end-line="594" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar!/org/jsoup/helper/HttpConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar!/org/jsoup/Jsoup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt://C:/Program Files/Java/jdk-11.0.2!/java.base/java/lang/CharSequence.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackEnd/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/TFIDF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="400">
+          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -344,7 +458,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.8.0_201</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -356,7 +470,20 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>CSC-365-WebParser</last-edited>
+          <last-edited>CSC365P1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8.0_201</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -368,7 +495,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jsoup-1.9.2</last-edited>
+          <last-edited>Maven: org.jsoup:jsoup:1.12.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
