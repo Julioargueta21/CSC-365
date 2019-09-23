@@ -1,3 +1,4 @@
+import SimilarityMetric.TFIDF;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -13,11 +14,17 @@ import java.util.Hashtable;
 
 public class Parser {
 
-    public Parser() {
+    ArrayList<String> urlList;
+    String urls;
+    TFIDF tfidfCalculator;
 
+    public Parser(String url, ArrayList urlList) {
+        this.urls = url;
+        this.urlList = urlList;
     }
+
     //gets the words from the webpage div
-    public ArrayList<String> getWebPage(String urls) throws IOException {
+    public ArrayList<String> getWordList() throws IOException {
         Document webDoc = Jsoup.connect(urls).userAgent("Mozilla").get();//List of words/terms
 
         Elements termsList = webDoc.select("div#mw-content-text");
@@ -29,41 +36,30 @@ public class Parser {
         return words;
     }
 
-
-    // Returns TFIDF for word in documents
-    public Hashtable<String,Double> getTFIDF(ArrayList<String> urlList, String term) throws IOException {
-        SimilarityMetric.TFIDF tfidfCalculator;
-
-        Hashtable<String, ArrayList<String>> Doc_Table = new Hashtable<>();
-        Hashtable<String, Double> TFIDF_Table = new Hashtable<>();
-
-
-
-        for (String url : urlList) {
-            // getWebPage(url) -> ArrayList<String>
-            tfidfCalculator = new SimilarityMetric.TFIDF(getWebPage(url), urlList);
-
-           /* //Debug
-            System.out.println("The Term: " + "(" + term + ")" + " in -> " + url);
-            System.out.println("TF: " + tfidfCalculator.tf(term));
-            System.out.println("IDF: " + tfidfCalculator.idf(term));
-            System.out.println("TFIDF: " + tfidfCalculator.tfidf(term));
-            System.out.println("Word Frequency: " + tfidfCalculator.getWordFrequency());
-            System.out.println("isTermContained?: " + tfidfCalculator.getContainsTerm());
-            System.out.println("Docs Containing Term: " + tfidfCalculator.getDocsContainingTerm());
-            System.out.println("----------------------------------------------");*/
-
-            // Populating HashTables
-
-            //Maps Actual Links with Arrays of words corresponding to the link  <String url, ArrayList<String> words>
-            Doc_Table.put(url, getWebPage(url));   // www , list.get(0)
-
-            // For each String inside of the Value of the HashTable holding array
-            for (String word : Doc_Table.get(url)) {
-                TFIDF_Table.put(word, tfidfCalculator.tfidf(word));
-            }
+    public HashTable getHashTable() throws IOException{
+        ArrayList<String> wordlist = getWordList();
+        HashTable ht = new HashTable();
+        tfidfCalculator = new TFIDF(getWordList(), urlList);
+        ArrayList<Word> wordObjList = new ArrayList<>();
+        for(int i = 0; i < wordlist.size(); i++) {
+            wordObjList.add(new Word(wordlist.get(i), tfidfCalculator.tfidf(wordlist.get(i))));
+            ht.put(wordObjList.get(i));
         }
-        return TFIDF_Table;
+
+        return ht;
     }
 
+    public void debug(String term) throws IOException{
+        tfidfCalculator = new TFIDF(getWordList(), urlList);
+        System.out.println("The Term: " + "(" + term + ")" + " in -> " + urls);
+        System.out.println("TF: " + tfidfCalculator.tf(term));
+        System.out.println("IDF: " + tfidfCalculator.idf(term));
+        System.out.println("TFIDF: " + tfidfCalculator.tfidf(term));
+        System.out.println("Word Frequency: " + tfidfCalculator.getWordFrequency());
+        System.out.println("isTermContained?: " + tfidfCalculator.getContainsTerm());
+        System.out.println("Docs Containing Term: " + tfidfCalculator.getDocsContainingTerm());
+        System.out.println("----------------------------------------------");
+
+
+    }
 }

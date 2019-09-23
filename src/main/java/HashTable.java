@@ -2,89 +2,81 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class HashTable {
-    LinkedList<Word>[] ht;
-    int count;
+    private LinkedList<Word>[] hTable;
+    private int count;
+    private int size;
 
     public HashTable() {
         int count = 0;
-        ht = new LinkedList[16];
+        hTable = new LinkedList[16];
 
-        for (int i = 0; i < ht.length; i++) {
-            ht[i] = new LinkedList<>();
+        for (int i = 0; i < hTable.length; i++) {
+            hTable[i] = new LinkedList<>();
         }
 
     }
 
     public Double get(String word) {
-        int hash = word.hashCode();
-        int ahash = Math.abs(hash);
-        int tableI = ahash & (ht.length - 1);
-        LinkedList<Word> lt = ht[tableI];
+        int hash = word.hashCode(); // Hash codes Are negative Numbers
+        int absHash = Math.abs(hash); // therefore with make them positive
+        int tableI = absHash & (hTable.length - 1);
+        LinkedList<Word> linkedList = hTable[tableI];
 
-        for (int i = 0; i < lt.size(); i++) {
-            Word w = lt.get(i);
-            if (w.word.equalsIgnoreCase(word)) {
+        for(Word w : linkedList) {
+           if(w.word.equalsIgnoreCase(word)) {
                 return w.weight;
-            }
-        }
+           }
+       }
         return null;
     }
 
     public void put(Word w) {
         resize();
-        int hash = w.word.hashCode();
-        int ahash = Math.abs(hash);
-        int tableI = ahash & (ht.length - 1);
 
-        ht[tableI].add(w);
+        int hash = w.word.hashCode();
+        int absHash = Math.abs(hash);
+        int tableI = absHash & (hTable.length - 1);
+
+        hTable[tableI].add(w);
         count++;
 
     }
 
     private ArrayList<Word> getAll() {
-        ArrayList<Word> w = new ArrayList<>();
-        for (int i = 0; i < ht.length; i++) {
-            LinkedList<Word> llw = ht[i];
-            for (int k = 0; k < llw.size(); k++) {
-                Word word = llw.get(k);
-                if (word.word != null) {
-                    w.add(word);
+        ArrayList<Word> wordList = new ArrayList<>();
+
+        for (LinkedList<Word> linkedList : hTable) {
+            for (Word w : linkedList) {
+                if (w.word != null) {
+                    wordList.add(w);
                 }
             }
         }
-        return w;
+        return wordList;
     }
 
     private void resize() {
-        if (count <= .75 * ht.length) {
+        ArrayList<Word> originalValues = getAll();
+
+        if (count <= .75 * hTable.length) {
             return;
         }
 
-        LinkedList<Word>[] lw = new LinkedList[ht.length * 2];
-        for (int i = 0; i < lw.length; i++) {
-            lw[i] = new LinkedList<>();
-        }
-        ArrayList<Word> alw = getAll();
-        for (int i = 0; i < alw.size(); i++) {
 
-            Word w = alw.get(i);
+        LinkedList<Word>[] resizedList = new LinkedList[hTable.length * 2];
+        for (int i = 0; i < resizedList.length; i++) {
+            resizedList[i] = new LinkedList<>();
+        }
+
+        for(Word w : originalValues) {
             int hash = w.word.hashCode();
-            int ahash = Math.abs(hash);
-            int tableI = ahash & (lw.length - 1);
-            lw[tableI].add(w);
+            int absHash = Math.abs(hash);
+            int tableI = absHash & (resizedList.length - 1);
+            resizedList[tableI].add(w);
         }
-        ht = lw;
+        hTable = resizedList;
 
-        System.out.println("DEBUG: Hashtable Resized");
+       // System.out.println("DEBUG: Hashtable Resized");
     }
 
-    public static void main(String[] args) {
-        HashTable ht = new HashTable();
-        for(int i = 0; i < 16; i++) {
-            ht.put(new Word("shit" + i, i));
-        }
-        for(int i = 0; i < 16; i++) {
-            System.out.println(ht.get("shit" + i));
-        }
-    }
 }

@@ -16,8 +16,8 @@ public class TFIDF {
     private boolean containsTerm;
 
     // Constructor
-    public TFIDF(ArrayList<String> url, ArrayList<String> urlList) {
-        this.doc = url;
+    public TFIDF(ArrayList<String> wordList, ArrayList<String> urlList) {
+        this.doc = wordList;
         this.dList = urlList;
     }
 
