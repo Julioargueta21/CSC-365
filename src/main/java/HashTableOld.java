@@ -20,7 +20,7 @@ public class HashTableOld {
         int hash = word.hashCode(); // Hash codes Are negative Numbers
         int absHash = Math.abs(hash); // therefore with make them positive
         int tableI = absHash & (hTable.length - 1);
-        System.out.println("Table I = " + absHash + " & " + hTable.length + " = " + tableI);
+        //System.out.println("Table I = " + absHash + " & " + hTable.length + " = " + tableI);
         LinkedList<Word> linkedList = hTable[tableI];
 
         for (int i = 0; i < linkedList.size(); i++) {
@@ -80,15 +80,4 @@ public class HashTableOld {
         System.out.println("DEBUG: Hashtable Resized");
     }
 
-    public static void main(String[] args) {
-        HashTableOld ht = new HashTableOld();
-        for (int i = 0; i < 32; i++) {
-            ht.put(new Word("shit" + i, i));
-        }
-        for (int i = 0; i < 32; i++) {
-            System.out.println(ht.get("shit" + i));
-        }
-
-
-    }
 }

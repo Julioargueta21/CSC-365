@@ -16,7 +16,7 @@ public class Parser {
 
     ArrayList<String> urlList;
     String urls;
-    TFIDF tfidfCalculator;
+
 
     public Parser(String url, ArrayList urlList) {
         this.urls = url;
@@ -36,30 +36,14 @@ public class Parser {
         return words;
     }
 
-    public HashTable getHashTable() throws IOException{
-        ArrayList<String> wordlist = getWordList();
-        HashTable ht = new HashTable();
-        tfidfCalculator = new TFIDF(getWordList(), urlList);
+    public HashTableOld getHashTable() throws IOException{
+        ArrayList<String> wordList = getWordList();
+        HashTableOld ht = new HashTableOld();
         ArrayList<Word> wordObjList = new ArrayList<>();
-        for(int i = 0; i < wordlist.size(); i++) {
-            wordObjList.add(new Word(wordlist.get(i), tfidfCalculator.tfidf(wordlist.get(i))));
+        for(int i = 0; i < wordList.size(); i++) {
+            wordObjList.add(new Word(wordList.get(i), new TFIDF(getWordList(),urlList).tfidf(wordList.get(i))));
             ht.put(wordObjList.get(i));
         }
-
         return ht;
-    }
-
-    public void debug(String term) throws IOException{
-        tfidfCalculator = new TFIDF(getWordList(), urlList);
-        System.out.println("The Term: " + "(" + term + ")" + " in -> " + urls);
-        System.out.println("TF: " + tfidfCalculator.tf(term));
-        System.out.println("IDF: " + tfidfCalculator.idf(term));
-        System.out.println("TFIDF: " + tfidfCalculator.tfidf(term));
-        System.out.println("Word Frequency: " + tfidfCalculator.getWordFrequency());
-        System.out.println("isTermContained?: " + tfidfCalculator.getContainsTerm());
-        System.out.println("Docs Containing Term: " + tfidfCalculator.getDocsContainingTerm());
-        System.out.println("----------------------------------------------");
-
-
     }
 }

@@ -42,7 +42,7 @@ public class HashTable {
 
     }
 
-    private ArrayList<Word> getAll() {
+   private ArrayList<Word> getAll() {
         ArrayList<Word> wordList = new ArrayList<>();
 
         for (LinkedList<Word> linkedList : hTable) {
@@ -76,7 +76,7 @@ public class HashTable {
         }
         hTable = resizedList;
 
-       // System.out.println("DEBUG: Hashtable Resized");
+       System.out.println("DEBUG: Hashtable Resized");
     }
 
 }
