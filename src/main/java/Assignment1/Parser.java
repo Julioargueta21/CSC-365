@@ -1,13 +1,10 @@
+
 package Assignment1;
 
-import SimilarityMetric.TFIDF;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,50 +12,44 @@ import java.util.Arrays;
 
 public class Parser {
 
-    ArrayList<String> urlList;
-    String url;
+    private ArrayList<String> wordList;
+    private ArrayList<String> urlList;
+    private DocumentList<ArrayList<String>> documentList;
+    private String url;
 
 
-    public Parser(String url, ArrayList urlList) {
+    public Parser(String url) throws IOException {
         this.url = url;
+        populateWordList();
+
+    }
+
+    public Parser(ArrayList<String> urlList) throws IOException {
         this.urlList = urlList;
+        populateDocList();
     }
 
     //gets the words from the webpage div
-    public ArrayList<String> getWordList() throws IOException {
+    private void populateWordList() throws IOException {
         Document webDoc = Jsoup.connect(url).userAgent("Mozilla").get();//List of words/terms
-
         Elements termsList = webDoc.select("div#mw-content-text");
+        wordList = new ArrayList<>(Arrays.asList(termsList.text().split("[^a-zA-Z]+"))); // \\W+
+    }
 
-        ArrayList<String> words = null;
-
-        /// Spilts the single string of termList into separate strings while removing punc
-        for (Element e : termsList) {
-            String regularExpression = "\\W+";  //* \\s+ *//*
-            words = new ArrayList<>(Arrays.asList(e.text().split(regularExpression)));
+    private void populateDocList() throws IOException {
+        DocumentList<ArrayList<String>> dList = new DocumentList<>();
+        for(String url: urlList) {
+            Document webDoc = Jsoup.connect(url).userAgent("Mozilla").get();//List of words/terms
+            Elements termsList = webDoc.select("div#mw-content-text");
+            dList.add(new ArrayList<>(Arrays.asList(termsList.text().split("[^a-zA-Z]+")))); // \\W+);
         }
-        return words;
+        documentList = dList;
+    }
+    public ArrayList<String> getWordList(){
+        return wordList;
     }
 
-    public void cache() throws IOException {
-        Document doc = Jsoup.connect(url).get();
-        BufferedWriter writer = null;
-        writer = new BufferedWriter(new FileWriter("d://test.txt"));
-        writer.write(doc.text());
-
-
+    public DocumentList<ArrayList<String>> getDocList(){
+        return documentList;
     }
-
-    public HashTable getHashTable() throws IOException {
-        ArrayList<String> wordList = getWordList();
-        HashTable ht = new HashTable();
-        ArrayList<Word> wordObjList = new ArrayList<>();
-        for (int i = 0; i < wordList.size(); i++) {
-            wordObjList.add(new Word(wordList.get(i), new TFIDF(getWordList(), urlList).tfidf(wordList.get(i))));
-            ht.put(wordObjList.get(i));
-        }
-        return ht;
-    }
-
-
 }
