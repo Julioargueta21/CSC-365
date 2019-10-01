@@ -1,10 +1,11 @@
 package Assignment1;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-public class HashTable {
+public class HashTable implements Serializable {
     private LinkedList<Word>[] hTable;
     private int count;
 
@@ -12,7 +13,6 @@ public class HashTable {
         count = 0;
         hTable = new LinkedList[16];
         Arrays.fill(hTable, new LinkedList<>());
-
     }
 
     public Double get(String word) {
@@ -68,7 +68,8 @@ public class HashTable {
         }
         hTable = resizedList;
 
-        System.out.println("DEBUG: Hashtable Resized: " + "Size: " + resizedList.length + " ID: " + Thread.currentThread().getId());
+       //System.out.println("DEBUG: Hashtable Resized: " + "Size: " + resizedList.length + " ID: " + Thread.currentThread().getId());
     }
+
 
 }

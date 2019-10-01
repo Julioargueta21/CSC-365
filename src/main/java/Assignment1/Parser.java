@@ -6,11 +6,12 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 
-public class Parser {
+public class Parser implements Serializable {
 
     private ArrayList<String> wordList;
     private ArrayList<String> urlList;
@@ -45,6 +46,12 @@ public class Parser {
         }
         documentList = dList;
     }
+
+    @Override
+    public String toString() {
+        return url.substring(30);
+    }
+
     public ArrayList<String> getWordList(){
         return wordList;
     }
