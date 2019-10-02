@@ -1,0 +1,8 @@
+HashTableOld.class
+Main.class
+Parser.class
+HashTable.class
+SimilarityMetric\TFIDF.class
+SimilarityMetric\CosineSimilarity.class
+GUI.class
+Word.class

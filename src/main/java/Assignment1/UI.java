@@ -19,7 +19,7 @@ public class UI {
         JPanel panel = new JPanel();
 
         //Frame Stuff
-        frame.setSize(400, 400);
+        frame.setSize(800, 300);
         frame.setLocationRelativeTo(null);
 
         frame.setVisible(true);
@@ -27,40 +27,35 @@ public class UI {
 
 
         //url stuff
-        JLabel urlLabel = new JLabel("Search using URL:  ");
-        JTextField urlField = new JTextField(20);
+        JLabel urlLabel = new JLabel("Enter Wiki URL:  ");
+        JTextField urlField = new JTextField(40);
 
+        //Output stuff
+        JLabel output1 = new JLabel("Output 1 ");
+        JLabel output2 = new JLabel("Output 2 ");
+        JLabel output3 = new JLabel("Output 3 ");
+        JLabel output4 = new JLabel("Output 4 ");
+        JLabel output5 = new JLabel("Output 5 ");
 
         //gobutton Stuff
-        JButton goButton = new JButton("Go");
-        /*goButton.addActionListener(ae -> {
+        JButton goButton = new JButton("Search");
+        goButton.addActionListener(ae -> {
             urlTxtBox = urlField.getText();
             Scanner urlScan = new Scanner(urlTxtBox);
             if (urlScan.hasNext()) {
 
-                try {
-                    HTMLParser.grabWebPage(true);
-                    JOptionPane.showMessageDialog(null, "Success, check your directory ");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                            urlTxtBox = urlField.getText();
             } else {
                 JOptionPane.showMessageDialog(null, "Enter A Valid Link");
             }
-        });*/
+        });
 
-        //filebutton Stuff
-        JButton fileButton = new JButton("Search using control file");
-        /*fileButton.addActionListener(ae -> {
-            try {
-                HTMLParser.grabWebPage(false);
-                JOptionPane.showMessageDialog(null, "Success, check your directory ");
 
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });*/
-        //empty label stuff
+
+
+
+
+    /*    //empty label stuff
         JLabel emptyLabel = new JLabel("   ");
 
 
@@ -68,39 +63,69 @@ public class UI {
         //frame.setLayout(new GridBagLayout());
         GridBagConstraints gc = new GridBagConstraints();
 
+
         //urlLabel locations
         gc.gridy = 0; // row 0
         gc.gridx = 0; // column 0
         gc.anchor = GridBagConstraints.LINE_END;
         panel.add(urlLabel, gc);
 
+
         //Field(textbox) locations
         gc.gridy = 0; // row 0
-        gc.gridx = 1; // column 1
+        gc.gridx = 0; // column 1
         gc.anchor = GridBagConstraints.LINE_START;
         panel.add(urlField, gc);
 
         //GoButton locations
         gc.gridy = 1;
-        gc.gridx = 1;
+        gc.gridx = 0;
         gc.anchor = GridBagConstraints.LINE_END;
         panel.add(goButton, gc);
 
         //empty label location
         gc.gridy = 3;
-        gc.gridx = 1;
+        gc.gridx = 0;
         gc.anchor = GridBagConstraints.LINE_START;
         panel.add(emptyLabel, gc);
 
 
-        //Search using txt file
-        gc.gridy = 4;
-        gc.gridx = 1;
-        gc.anchor = GridBagConstraints.LINE_START;
-        panel.add(fileButton, gc);
+
+*/
+
+
+
+        Box box = Box.createVerticalBox();
+        panel.add( box );
+
+        urlLabel.setAlignmentX(JLabel.CENTER);
+        box.add(urlLabel);
+
+        urlField.setAlignmentX(JLabel.CENTER);
+        box.add(urlField);
+
+        goButton.setAlignmentY(JLabel.CENTER);
+        box.add(goButton );
+
+        output1.setHorizontalAlignment(JLabel.CENTER);
+        box.add(output1);
+
+        output2.setHorizontalAlignment(JLabel.CENTER);
+        box.add(output2);
+
+        output3.setHorizontalAlignment(JLabel.CENTER);
+        box.add(output3);
+
+        output4.setHorizontalAlignment(JLabel.CENTER);
+        box.add(output4);
+
+        output5.setHorizontalAlignment(JLabel.CENTER);
+        box.add(output5);
 
         frame.add(panel);
+        frame.revalidate();
     }
+
 
 
     public static String getURLTxtBox() {
