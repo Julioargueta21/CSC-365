@@ -1,7 +1,7 @@
 package SimilarityMetric.Tests;
 
-import Assignment1.DocumentList;
-import Assignment1.Parser;
+import Assignment1.Core.DocumentList;
+import Assignment1.Core.Parser;
 import SimilarityMetric.TFIDF;
 
 import java.io.IOException;

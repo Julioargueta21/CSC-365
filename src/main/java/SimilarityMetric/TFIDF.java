@@ -1,6 +1,6 @@
 package SimilarityMetric;
 
-import Assignment1.DocumentList;
+import Assignment1.Core.DocumentList;
 
 import java.io.IOException;
 import java.util.ArrayList;
