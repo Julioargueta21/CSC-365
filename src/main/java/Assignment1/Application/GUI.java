@@ -38,10 +38,11 @@ public class GUI {
 
         //Search Button Stuff
         JButton searchButton = new JButton("Search");
+        JButton closeButton = new JButton("Close");
 
-        if (bugFixer) {
-            bugFixer = false;
-            searchButton.addActionListener(ae -> {
+
+
+        searchButton.addActionListener(ae -> {
                 Scanner urlScan = new Scanner(urlField.getText());
                 if (urlScan.hasNext() & urlField.getText().contains("https://en.wikipedia.org") | urlField.getText().contains("https://simple.wikipedia.org")) {
                     // Put link to url list array list
@@ -54,7 +55,8 @@ public class GUI {
                         output5.setText(backend.getResult(5));
 
 
-                        searchButton.setText("Search again");
+                        searchButton.setVisible(false);
+                        closeButton.setVisible(true);
                         frame.revalidate();
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -63,17 +65,13 @@ public class GUI {
                     JOptionPane.showMessageDialog(null, "Enter A Valid Wiki Link");
                 }
             });
-        } else {
-            searchButton.addActionListener(ae -> {
-                Scanner urlScan = new Scanner(urlField.getText());
-                if (urlScan.hasNext() & urlField.getText().contains("https://en.wikipedia.org") | urlField.getText().contains("https://simple.wikipedia.org")) {
-                    System.out.println("EXIT NOW ");
-                    System.exit(0);
-                } else {
-                    JOptionPane.showMessageDialog(null, "Enter A Valid Wiki Link");
-                }
-            });
-        }
+
+        closeButton.addActionListener(ae -> {
+           System.exit(0);
+        });
+
+
+
 
 
         Box box = Box.createVerticalBox();
@@ -102,6 +100,9 @@ public class GUI {
 
         output5.setHorizontalAlignment(JLabel.CENTER);
         box.add(output5);
+
+        closeButton.setAlignmentX(JLabel.CENTER);
+        box.add(closeButton);
 
         frame.add(panel);
         frame.revalidate();

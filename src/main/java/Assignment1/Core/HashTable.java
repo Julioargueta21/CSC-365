@@ -15,12 +15,12 @@ public class HashTable implements Serializable {
         Arrays.fill(hTable, new LinkedList<>());
     }
 
-    public Double get(String word) {
-        int tableIndex = Math.abs(word.hashCode()) & (hTable.length - 1);
-        LinkedList<Word> linkedList = hTable[tableIndex];
+    public Double get(String key) {
+        int hashTableIndex = Math.abs(key.hashCode()) & (hTable.length - 1);
+        LinkedList<Word> linkedList = hTable[hashTableIndex];
 
         for (Word w : linkedList) {
-            if (w.word.equalsIgnoreCase(word)) {
+            if (w.word.equalsIgnoreCase(key)) {
                 return w.weight;
             }
         }
@@ -30,8 +30,8 @@ public class HashTable implements Serializable {
     public void put(Word w) {
         resize();
 
-        int tableIndex = Math.abs(w.word.hashCode()) & (hTable.length - 1);
-        hTable[tableIndex].add(w);
+        int hashTableIndex = Math.abs(w.word.hashCode()) & (hTable.length - 1);
+        hTable[hashTableIndex].add(w);
         count++;
 
     }
