@@ -30,16 +30,15 @@ public class TFIDF {
         }
         wordFrequency = counter;
         double tfAnswer = (double) wordFrequency / (double) doc.size();
-
         return tfAnswer;
     }
 
     public double idf(String word) {
         int counter = 0;
         // Repeats the Action of the inner loop for each document
-        for (int docNumber = 0; docNumber < dList.size(); docNumber++) {
-         // Checks one document for the Word then increments docsContainingTerm then breaks
-            for (String term : dList.get(docNumber)) {
+        for (int docIndex = 0; docIndex < dList.size(); docIndex++) {
+            // Checks one document for the Word then increments docsContainingTerm then breaks
+            for (String term : dList.get(docIndex)) {
                 if (term.equalsIgnoreCase(word)) {
                     counter++;
                     break;
@@ -47,20 +46,28 @@ public class TFIDF {
 
             }
         }
-
         docsContainingTerm = counter;
-        return Math.log10((double) dList.size() / (double) counter);
+        return Math.log10((double) dList.size() / (double) docsContainingTerm);
     }
 
+    public double tfidf(String term) throws IOException {
+        double tfidfResult = tf(term) * idf(term);
+
+        if (tfidfResult < 0) {
+            throw new IOException("Something is wrong with math");
+        } else {
+            return tfidfResult;
+        }
+    }
 
     public int getDocsContainingTerm() {
         return docsContainingTerm;
     }
 
+    //raw freq
     public int getWordFrequency() {
         return wordFrequency;
     }
-
 
     public int getDocSize() {
         return doc.size();
@@ -68,16 +75,5 @@ public class TFIDF {
 
     public int getDListSize() {
         return dList.size();
-    }
-
-    public double tfidf(String term) throws IOException {
-        double tfidfResult = tf(term) * idf(term);
-        if (tfidfResult < 0) {
-            throw new IOException("Something is wrong with maths");
-        } else {
-            return tf(term) * idf(term);
-        }
-
-        //return tfidfResult;
     }
 }

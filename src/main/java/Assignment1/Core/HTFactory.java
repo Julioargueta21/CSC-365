@@ -23,9 +23,8 @@ public class HTFactory implements Serializable {
         ArrayList<String> wordList = parser.getWordList();
         TFIDF metric = new TFIDF(wordList, dList);
 
-        for (int i = 0; i < wordList.size(); i++) {
-            ht.put(new Word(wordList.get(i), metric.tf( wordList.get(i) )));
-           // System.out.println("TFIDF :" + wordList.get(i) + ": "+metric.tfidf(wordList.get(i)));
+        for(int i = 0; i < wordList.size(); i++) {
+            ht.put(new Word(wordList.get(i), metric.tf(wordList.get(i) )));
         }
         return ht;
 

@@ -33,7 +33,6 @@ public class HashTable implements Serializable {
         int hashTableIndex = Math.abs(w.word.hashCode()) & (hTable.length - 1);
         hTable[hashTableIndex].add(w);
         count++;
-
     }
 
     private ArrayList<Word> getAll() {
@@ -51,13 +50,13 @@ public class HashTable implements Serializable {
 
     private void resize() {
         ArrayList<Word> originalValues = getAll();
+        //if the arrayList is less than 75% full don't resize
         if (count <= .75 * hTable.length) {
             return;
         }
 
-        LinkedList<Word>[] resizedList = new LinkedList[hTable.length * 2]; //
-
-
+        //if the array list is 75% full perform this
+        LinkedList<Word>[] resizedList = new LinkedList[hTable.length * 2];
         for (int i = 0; i < resizedList.length; i++) {
             resizedList[i] = new LinkedList<>();
         }
@@ -67,8 +66,6 @@ public class HashTable implements Serializable {
             resizedList[tableIndex].add(w);
         }
         hTable = resizedList;
-
-       //System.out.println("DEBUG: Hashtable Resized: " + "Size: " + resizedList.length + " ID: " + Thread.currentThread().getId());
     }
 
 

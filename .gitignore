@@ -1,5 +1,5 @@
 *.txt
-!control.txt
+!ControlFile.txt
 #Compiled class file
 *.class
 
