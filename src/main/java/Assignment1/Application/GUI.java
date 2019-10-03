@@ -23,6 +23,12 @@ public class GUI {
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+
+
+        //spacer
+        JLabel spacer1Label = new JLabel(" ");
+
+
         //url input
         JLabel urlLabel = new JLabel("Enter Wiki URL:  ");
         JTextField urlField = new JTextField(40);
@@ -34,7 +40,8 @@ public class GUI {
         JLabel output4 = new JLabel(" ");
         JLabel output5 = new JLabel(" ");
 
-        JLabel sugestedLabel = new JLabel("                       ==== Recommended Pages ====  ");
+        JLabel sugestedLabel = new JLabel("              ==== Recommended Pages ====  ");
+        JLabel urlInputLabel = new JLabel(" ");
 
         //Buttons
         JButton searchButton = new JButton("Search");
@@ -55,6 +62,11 @@ public class GUI {
                         output4.setText(backend.getResult(4)); output4.setForeground(new Color(204,0,0));
                         output5.setText(backend.getResult(5)); output5.setForeground(new Color(204,0,0));
 
+                        urlInputLabel.setText("         " + urlField.getText());
+                        urlInputLabel.setVisible(true);
+
+
+                        spacer1Label.setVisible(true);
                         urlLabel.setText(" ");
                         sugestedLabel.setVisible(false);
                         urlField.setVisible(false);
@@ -83,8 +95,10 @@ public class GUI {
         panel.add(box);
 
         urlLabel.setAlignmentX(JLabel.CENTER);         box.add(urlLabel);
+        urlInputLabel.setAlignmentX(JLabel.CENTER);         box.add(urlInputLabel);
         urlField.setAlignmentX(JLabel.CENTER);         box.add(urlField);
 
+        spacer1Label.setHorizontalAlignment(JLabel.CENTER); box.add(spacer1Label);
         sugestedLabel.setHorizontalAlignment(JLabel.CENTER); box.add(sugestedLabel);
 
         searchButton.setAlignmentY(JLabel.CENTER);     box.add(searchButton);
@@ -98,8 +112,11 @@ public class GUI {
 
         closeButton.setAlignmentX(JLabel.CENTER);      box.add(closeButton);
 
+
         closeButton.setVisible(false);
+        spacer1Label.setVisible(false);
         sugestedLabel.setVisible(false);
+        urlInputLabel.setVisible(false);
 
 
 
